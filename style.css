@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    font-family: system-ui, 'Helvetica Neue', sans-serif;
+}
+:root{
+    --main:#7b4ee4;
+    --darkblue:#362078;
+    --black:#060606;
+    --white:#e7dff4;
+}
+body{
+    min-height: 100vh;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 12%;
+    background-color: #fff;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+}
+.navbar li a{
+    padding: 10px 20px;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+}
+.navbar li button:hover{
+    color: #7b4ee4;
+    border: 2px solid #7b4ee4;
+    background-color: transparent;
+    transition: all ease .50s;
+}
+.logo{
+    font-weight: bold;
+    font-size: 25px ;
+
+}
+.logo span{
+    color: #7b4ee4;
+}
+ul li button{
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #7b4ee4;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    border: 2px solid #7b4ee4;
+    cursor: pointer;
+}
+.home{
+    display: flex;
+    align-items: center ;
+    padding:20px 10%;
+    background-color:var(--main);
+    min-height: 100vh;
+    gap: 10rem;
+}
+.home h1{
+    color: #fff;
+    font-size: 40px;
+}
+.home p{
+    color: var(--white);
+    line-height: 1.4rem;
+    margin: 1.5rem 0 2rem 0;
+}
+form{
+    width: 360px;
+    box-shadow: 1px 7px 8px 0 #222121;
+    display: flex;
+    align-items: center;
+}
+form input{
+    width: 100%;
+    padding: 10px 15px;
+    outline: none;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+form button{
+    height: 100%;
+    width: 20%;
+    padding:10px 3px;
+    color: #fff;
+    background-color: #7b4ee4;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    outline: none;
+    border-radius: 0 5px 5px 0;
+    font-weight: 600;
+}
+.home .img img{
+    width: 500px;
+    height: 500px;
+}
+/* media queries */
+@media(max-width:1360px){
+    .home{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 3rem;
+        gap: 4rem;
+    }
+    form{
+        max-width: 100%;
+        text-align: center;
+        margin:  0 auto;
+    }
+    .home .img img{
+        width: 400px;
+        height: 400px;
+    }
+}
+@media(max-width:670px){
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    .logo{
+        margin-bottom: 1rem;
+    }
+    .home .img img{
+        width: 350px;
+        height: 350px;
+    }
+}
+
